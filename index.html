@@ -4,14 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./src/styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <title>Henry's portfolio</title>
 </head>
 <body>
-    <nav style="position: fixed;" class="navbar navbar-expand-lg ">
+    <nav class="navbar navbar-expand-lg fixed-top">
         <div class="container-fluid">
             <div class="navMain">
-                <a class="nav-name" href="#"> <SS /> </a>
-                <p type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                <a class="nav-name" href="#"> <span><</span>SS /> </a>
+                <p class="donot" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </p>
                 <div class="offcanvas offcanvas-end padNav" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
@@ -21,47 +23,282 @@
                     <div class="offcanvas-body ">
                     <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
                         <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Home</a>
-                        </li>
-                    
-                        <li id="prevent" class="nav-item dropB dropdown">
-                        <a class="nav-link  dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            Prevention
-                        </a>
-                        <ul id="dropWord" class="drop ">
-                            <li class="dropli"><a  href="#">Stay at home</a></li>
-                            <li class="dropli"><a class="" href="#">Keep social distancing</a></li>
-                            <li class="dropli"><a class="" href="#">Wear facemask</a></li>
-                            <li class="dropli"><a class="" href="#">Wash your hand</a></li>
-                            <li class="dropli arr dropC"><a class="" href="#">More links</a>>
-                            <ul class="men drops">
-                                <li>Menu One</li>
-                                <li>Menu Two</li>
-                                <li>Menu Three</li>
-                            </ul></li>
-                        </ul>
+                        <a class="nav-link active" aria-current="page" href="#about">About</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Symptoms</a>
+                            <a class="nav-link" href="#work">Work</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">About</a>
+                            <a class="nav-link" href="#testimonials">Testimonials</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Blog</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Contact</a>
+                            <a class="nav-link" href="#contact">Contact</a>
                         </li>
                     </ul>
-                    <form class="d-flex mt-3" role="search">
-                        
-
-                    </form>
+                    <a class="dwnd" href="">Download CV</a>
                     </div>
                 </div>
             </div>
         </div>
       </nav>
+
+      <main>
+        <!-- BIO -->
+        <section class="container-fluid">
+            <div class="bio">
+                <div class="des">
+                    <h1>Hi, I’m Henry 👋</h1>
+                    <p>I'm a full stack developer (React.js & Node.js) with a focus on creating (and occasionally designing) exceptional digital experiences that are fast, accessible, visually appealing, and responsive. Even though I have been creating web applications for over 7 years, I still love it as if it was something new.</p>
+                    <p><i class="bi bi-location"></i>Kaduna, Nigeria</p>
+                    <p>Available for new projects</p>
+                    <!-- ICON -->
+                    <a href="https://twitter.com/HENRYODUNSI5"><i class="bi bi-github"></i></a>
+                   <a href="https://twitter.com/HENRYODUNSI5"><i class="bi bi-twitter"></i></a>
+                   <a href="https://twitter.com/HENRYODUNSI5"><i class="bi bi-figma"></i></a>
+                     
+                </div>
+                <div class="img1">
+                    <img class="img" src="./assets/Pic.png" alt="Henry img">
+                </div>
+            </div>
+        </section>
+            <!-- ABOUT -->
+        <section id="about" class="container-fluid">
+            <div class="abt">
+                <button>About me</button>
+                <div class="abtDes">
+                    <div class="abtImg">
+                        <img src="./assets/stand.png" alt="Henry img2">
+                    </div>
+                    <div class="abtP">
+                        <h2>Curious about me? Here you have it:</h2>
+                        <p>I'm a passionate, self-proclaimed designer who specializes in full stack development (React.js & Node.js). I am very enthusiastic about bringing the technical and visual aspects of digital products to life. User experience, pixel perfect design, and writing clear, readable, highly performant code matters to me.</p>
+                        <p>I began my journey as a web developer in 2015, and since then, I've continued to grow and evolve as a developer, taking on new challenges and learning the latest technologies along the way. Now, in my early thirties, 7 years after starting my web development journey, I'm building cutting-edge web applications using modern technologies such as Next.js, TypeScript, Nestjs, Tailwindcss, Supabase and much more.</p>
+                        <p>I am very much a progressive thinker and enjoy working on products end to end, from ideation all the way to development.</p>
+                        <p>When I'm not in full-on developer mode, you can find me hovering around on twitter or on indie hacker, witnessing the journey of early startups or enjoying some free time. You can follow me on Twitter where I share tech-related bites and build in public, or you can follow me on GitHub.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- SKILLS -->
+         <section class="container-fluid">
+            <div class="skill">
+                <div class="skillDes">
+                    <button class="skillbtn">Skills</button>
+                    <p>The skills, tools and technologies I am really good at:</p>
+                </div>
+                <div class="tools">
+                    <!-- TECHNOLOGIS -->
+                    <img class="tool" src="./assets/js.png" alt="js">
+                    <img class="tool" src="./assets/ts.png" alt="ts">
+                    <img class="tool" src="./assets/react.png" alt="resct">
+                    <img class="tool" src="./assets/next.png" alt="next">
+                    <img class="tool" src="./assets/node.png" alt="node">
+                    <img class="tool" src="./assets/express.png" alt="express">
+                    <img class="tool" src="./assets/post.png" alt="PostgreSQL">
+                    <img class="tool" src="./assets/mongo.png" alt="mongoDB">
+                    <img class="tool" src="./assets/sass.png" alt="sass">
+                    <img class="tool" src="./assets/tailwind.png" alt="Tailwindcss">
+                    <img class="tool" src="./assets/figma.png" alt="figma">
+                    <img class="tool" src="./assets/cypress.png" alt="cypress">
+                </div>
+            </div>
+         </section>
+         <!-- EXPERIENCE -->
+          <section class="container-fluid">
+            <div class="exp">
+                <div class="expDes">
+                    <button class="expbtn">Experience</button>
+                    <p>Here is a quick summary of my most recent experiences:</p>
+                </div>
+                <div class="expWork">
+                    <div>
+                        <img class="expimg" src="./assets/upwork.png" alt="upwork logo">
+                    </div>
+                    <div class="expP">
+                        <h3>Sr. Frontend Developer</h3>
+                        <ul>
+                            <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
+                            <li>Ut pretium arcu et massa semper, id fringilla leo semper.</li>
+                            <li>Sed quis justo ac magna.</li>
+                            <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
+                        </ul>
+                    </div>
+                    <div class="expDate">
+                        <p>Nov 2021 - Present</p>
+                    </div>
+                </div>
+                <div class="expWork">
+                    <div>
+                        <img class="expimg" src="./assets/upwork.png" alt="upwork logo">
+                    </div>
+                    <div class="expP">
+                        <h3>Sr. Frontend Developer</h3>
+                        <ul>
+                            <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
+                            <li>Ut pretium arcu et massa semper, id fringilla leo semper.</li>
+                            <li>Sed quis justo ac magna.</li>
+                            <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <p>Nov 2021 - Present</p>
+                    </div>
+                </div>
+                <div class="expWork">
+                    <div>
+                        <img class="expimg" src="./assets/upwork.png" alt="upwork logo">
+                    </div>
+                    <div class="expP">
+                        <h3>Sr. Frontend Developer</h3>
+                        <ul>
+                            <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
+                            <li>Ut pretium arcu et massa semper, id fringilla leo semper.</li>
+                            <li>Sed quis justo ac magna.</li>
+                            <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <p>Nov 2021 - Present</p>
+                    </div>
+                </div>
+            </div>
+          </section>
+          <!-- WORK -->
+           <section id="work" class="container-fluid">
+            <div class="wrk">
+                <div class="work">
+                    <button>Work</button>
+                    <p>Some of the noteworthy projects I have built:</p>
+                </div>
+                <div class="workDes">
+                    <div class="workimg">
+                        <img src="./assets/Picture.png" alt="my work">
+                    </div>
+                    <div class="workP">
+                        <h3>Fiskil</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga asperiores autem, vero voluptate fugiat esse error quia officiis recusandae reprehenderit, fugit repudiandae quas et dolore expedita! Magni eum voluptas voluptatem.</p>
+                        <div class="tech">
+                            <div class="techSub">React</div>
+                            <div class="techSub">Next.js</div>
+                            <div style="width: 112px;" class="techSub">TypeScript</div>
+                            <div class="techSub">Nest.js</div>
+                            <div style="width: 120px;" class="techSub">PostgreSQL</div>
+                            <div style="width: 119px;" class="techSub">Tailwindcss</div>
+                            <div class="techSub">Figma</div>
+                            <div style="width: 96px;" class="techSub">Cypress</div>
+                            <div style="width: 110px;" class="techSub">Storybook</div>
+                            <div style="width: 60px;" class="techSub">Git</div>
+                        </div>
+                        <!-- LINK ICON -->
+                    </div>
+                </div>
+                <div class="workDes">
+                    <div class="workP">
+                        <h3>Fiskil</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga asperiores autem, vero voluptate fugiat esse error quia officiis recusandae reprehenderit, fugit repudiandae quas et dolore expedita! Magni eum voluptas voluptatem.</p>
+                        <div class="tech">
+                            <div class="techSub">React</div>
+                            <div class="techSub">Next.js</div>
+                            <div style="width: 112px;" class="techSub">TypeScript</div>
+                            <div class="techSub">Nest.js</div>
+                            <div style="width: 120px;" class="techSub">PostgreSQL</div>
+                            <div style="width: 119px;" class="techSub">Tailwindcss</div>
+                            <div class="techSub">Figma</div>
+                            <div style="width: 96px;" class="techSub">Cypress</div>
+                            <div style="width: 110px;" class="techSub">Storybook</div>
+                            <div style="width: 60px;" class="techSub">Git</div>
+                        </div>
+                        <!-- LINK ICON -->
+                    </div>
+                    <div class="workimg">
+                        <img src="./assets/Picture.png" alt="my work">
+                    </div>
+                </div>
+                <div class="workDes">
+                    <div class="workimg">
+                        <img src="./assets/Picture.png" alt="my work">
+                    </div>
+                    <div class="workP">
+                        <h3>Fiskil</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga asperiores autem, vero voluptate fugiat esse error quia officiis recusandae reprehenderit, fugit repudiandae quas et dolore expedita! Magni eum voluptas voluptatem.</p>
+                        <div class="tech">
+                            <div class="techSub">React</div>
+                            <div class="techSub">Next.js</div>
+                            <div style="width: 112px;" class="techSub">TypeScript</div>
+                            <div class="techSub">Nest.js</div>
+                            <div style="width: 120px;" class="techSub">PostgreSQL</div>
+                            <div style="width: 119px;" class="techSub">Tailwindcss</div>
+                            <div class="techSub">Figma</div>
+                            <div style="width: 96px;" class="techSub">Cypress</div>
+                            <div style="width: 110px;" class="techSub">Storybook</div>
+                            <div style="width: 60px;" class="techSub">Git</div>
+                        </div>
+                        <!-- LINK ICON -->
+                    </div>
+                </div>
+            </div>
+           </section>
+           <!-- TESTIMONIAL -->
+            <section id="testimonials" class="container-fluid">
+                <div class="test">
+                        <div class="testDes">
+                            <button>Testimonials</button>
+                            <p>Nice things people have said about me:</p>
+                        </div>
+                    <div class="testPple">
+                        <div class="subTest">
+                            <div>
+                                <img class="testimg" src="./assets/icon-avatar.png" alt="icon">
+                            </div>
+                            <p class="subTestP">“Job well done! I am really impressed. He is very very good at what he does:) I would recommend Sagar and will rehire in the future for Frontend development.”</p>
+                            <h3>John Doe</h3>
+                            <p class="subP">Founder -xyz.com</p>
+                        </div>
+                        <div class="subTest">
+                            <div>
+                                <img class="testimg" src="./assets/icon-avatar.png" alt="icon">
+                            </div>
+                            <p class="subTestP">“Job well done! I am really impressed. He is very very good at what he does:) I would recommend Sagar and will rehire in the future for Frontend development.”</p>
+                            <h3>John Doe</h3>
+                            <p class="subP">Founder -xyz.com</p>
+                        </div>
+                        <div class="subTest">
+                            <div>
+                                <img class="testimg" src="./assets/icon-avatar.png" alt="icon">
+                            </div>
+                            <p class="subTestP">“Job well done! I am really impressed. He is very very good at what he does:) I would recommend Sagar and will rehire in the future for Frontend development.”</p>
+                            <h3>John Doe</h3>
+                            <p class="subP">Founder -xyz.com</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- TOUCH -->
+             <section id="contact" class="container-fluid">
+                <div class="contact">
+                    <div class="subCont">
+                        <button>Get in touch</button>
+                        <p>What’s next? Feel free to reach out to me if you're looking for <br> a developer, have a query, or simply want to connect.</p>
+                    </div>
+                    <div class="contDet">
+                        <h2><i class="bi bi-envelope"></i> henryodunsi@gamil.com</h2>
+                        <h2><i class="bi bi-telephone"></i> +2349093812501</h2>
+                    </div>
+                    <div class="social">
+                        <p>You may also find on this platforms!</p>
+                        <!-- ICONS -->
+                        <a href="https://twitter.com/HENRYODUNSI5"><i class="bi bi-github"></i></a>
+                        <a href="https://twitter.com/HENRYODUNSI5"><i class="bi bi-twitter"></i></a>
+                    </div>
+                </div>
+             </section>
+      </main>
+      <footer>
+        <p>© <span id="copy"></span> | Coded by Henry Odunsi</p>
+      </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="./src/script.js"></script>
 </body>
 </html>

@@ -1,0 +1,395 @@
+html {
+    scroll-behavior: smooth;
+}
+
+nav {
+    z-index: 1;
+    width: 100%;
+    margin-top: 0;
+    background-color: hsla(0, 0%, 99%, 0.726);
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px);
+}
+
+.navMain {
+    width: 100%;
+    padding: 16px 80px;
+    display: flex;
+    justify-content: space-between;
+}
+ 
+.nav-name {
+    font-weight: 700;
+    font-size: 30px;
+    text-decoration: none;
+    color: #000;
+} 
+
+.nav-item {
+    padding-left: 30px;
+    padding-bottom: 20px;
+}
+
+.nav-item a {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.donot {
+    display: none;
+}
+
+.dwnd {
+    width: 136px;
+    height: 36px;
+    border-radius: 12px;
+    padding: 9px 6px;
+    text-decoration: none;
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+}
+
+/* MAIN */
+main {
+    margin-top: 10px;
+}
+
+/* BIO */
+.bio {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 32px;
+    max-height: 360px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 90px;
+}
+
+.des {
+    max-width: 768px;
+    height: 360px;
+}
+
+.des h1 {
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 72px;
+    color: #111827;
+}
+
+.des p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.img1 {
+    max-width: 400px;
+    height: 360px;
+    min-width: 384px;
+}
+
+.img {
+    width: 280px;
+    height: 320px;
+    box-shadow: 25px 25px #e5e7eb;
+}
+
+/* ABOUT */
+.abt {
+    padding: 32px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #f9fafb;
+}
+
+.abt button, .skillbtn, .expbtn, .work button {
+    width: 105px;
+    height: 28px;
+    border-radius: 12px;
+    padding: 4px 20px;
+    background-color: #e5e7eb;
+    border-style: none;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    margin-bottom: 40px;
+
+}
+
+.abtDes {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+.abtImg {
+    width: 584px;
+    height: 694px;
+    min-width: 444px;
+}
+
+.abtImg img {
+    width: 400px;
+    height: 480px;
+    box-shadow: -25px 25px #e5e7eb;
+
+}
+
+.abtP {
+    width: 584px;
+    height: 694px;
+}
+
+.abtP h2 {
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 36px;
+
+}
+
+.abtP p, .work p, .test p {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+}
+/* SKILL */
+.skill {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    flex-direction: column;
+    padding: 0 32px;
+    margin-bottom: 100px;
+}
+
+.tools {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 120px;
+    flex-wrap: wrap;
+    margin: 0 auto;
+}
+
+.tool {
+    width: 88px;
+    height: 100px;
+}
+
+.skillDes, .expDes {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.skillDes p, .expDes p, .subCont p {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
+}
+
+.exp {
+    background-color: #f9fafb;
+}
+
+.expWork {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+    margin-bottom: 10px;
+    width: 896px;
+    border-radius: 12px;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 5px 5px #aaa;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.expimg {
+    width: 206px;
+    /* height: 28px; */
+}
+
+.expP {
+    width: 384px;
+
+}
+
+.expP h3 {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 28px;
+}
+
+.expP ul {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    margin-top: 20px;
+}
+
+.expDate p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.work {
+    margin: 50px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.workDes {
+    display: flex;
+    width: 1152px;
+    justify-content: space-between;
+    border-radius: 12px;
+}
+
+.workimg, .workP {
+    max-width: 576px;
+    padding: 48px;
+}
+
+.workimg img {
+    width: 480px;
+    height: 384px;
+}
+
+.workP h3 {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 28px;
+}
+
+.tech {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.techSub {
+    width: 79px;
+    height: 28px;
+    border-radius: 12px;
+    padding: 4px 20px;
+    background-color: #e5e7eb;
+    border-style: none;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+}
+
+.test {
+    background-color: #f9fafb;
+    padding-bottom: 80px;
+    padding-top: 60px;
+}
+
+.test, .wrk, .contact {
+    /* width: 1440px; */
+    margin: 50px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.testDes button, .subCont button {
+    width: 125px;
+    height: 28px;
+    border-radius: 12px;
+    padding: 4px 20px;
+    background-color: #e5e7eb;
+    border-style: none;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    margin-bottom: 40px;
+}
+
+.testPple {
+    display: flex;
+    justify-content: space-between;
+    width: 1216px;
+    gap: 48px;
+}
+
+.subTest {
+    min-width: 300px;
+    border-radius: 12px;
+    background-color: #fff;
+    padding: 48px;
+}
+
+.testimg {
+    width: 64px;
+    height: 64px;
+}
+
+.subTestP {
+    text-align: left;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    margin-top: 30px;
+}
+
+.subTest h3 {
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 28px;
+}
+
+.subP {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+}
+
+.contDet {
+    width: 596px;
+}
+
+.contDet h1 {
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 40px;
+}
+
+.social p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+footer {
+    padding: 24px 80px;
+    text-align: center;
+}
+
+.bi {
+    font-size: 25px;
+    color: #000;
+    padding: 10px;
+}
+
+@media (max-width: 1000px) {
+    .donot {
+        display: block;
+    }
+}
