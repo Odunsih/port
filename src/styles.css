@@ -85,7 +85,7 @@ main {
 }
 
 .img1 {
-    max-width: 400px;
+    max-width: 100%;
     height: 360px;
     min-width: 384px;
 }
@@ -127,9 +127,9 @@ main {
 }
 
 .abtImg {
-    width: 584px;
-    height: 694px;
-    min-width: 444px;
+    width: 100%;
+    /* height: 694px; */
+    min-width: 400px;
 }
 
 .abtImg img {
@@ -220,7 +220,8 @@ main {
 }
 
 .expP {
-    width: 384px;
+    width: 100%;
+    max-width: 384px;
 
 }
 
@@ -395,6 +396,19 @@ footer {
 }
 
 @media (max-width: 760px) {
+    body {
+        width: 100%;
+    }
+
+    nav {
+        width: 80%;
+    }
+
+    .navMain {
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+
     .bio {
         flex-direction: column-reverse;
         /* margin-top: 100px; */
@@ -405,13 +419,21 @@ footer {
         margin-top: 90px;
     }
 
+    .img1 {
+        margin: auto;
+    }
+
     .img {
         box-shadow: 2px 20px 1px 20px #e5e7eb;
         margin-top: 90px;
     }
 
     section {
-        margin-top: 90px;
+        margin-top: 230px;
+    }
+
+    #about {
+        margin-top: 350px;
     }
 
     .abtDes {
@@ -420,13 +442,18 @@ footer {
     }
 
     .abtImg {
-        width: 100%;
+        margin: auto;
+        margin-bottom: 50px;
     }
 
     .abtImg img {
         box-shadow: 2px 20px 1px 20px #e5e7eb;
-        width: 100%;
+        width: 70%;
 
+    }
+
+    .abtP {
+        margin-top: 0;
     }
 
     .abtP, .skill, .exp, .work {
@@ -436,6 +463,12 @@ footer {
     .expWork, .workDes, .testPple {
         width: 90%;
         flex-direction: column;
+    }
+
+    .expP {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
     }
 
     .workimg, .workimg img{
